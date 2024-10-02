@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="" />
+        <title>Contact Form</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+    <h2 class="content-head is-center">Contact Us!</h2>
+    <script src="Contact.js"></script>
+    <aside>
+        <p>
+            <p>Please use the <b><em>Contact Form</em></b>
+            to send us a message.
+        </p>
+    </aside>
+
+    <!-- START HERE -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <!-- Style The Contact Form How Ever You Prefer -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="mythri.kulkarni7000@gmail.com"
+    action="https://script.google.com/macros/s/AKfycbwpMGKINYa4d4h_0WLV40XZjLFPzcAvRriUT1WD5HnWU1v7EvmScaZV-KKSjSNGvcU3Zg/exec">
+        <!-- change the form action to your script url -->
+
+        <div class="form-elements">
+
+        <fieldset class="pure-group">
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="10"
+            placeholder="Tell us what's on your mind..."></textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="email"><em>Your</em> Email Address:</label>
+            <input id="email" name="email" type="email" value=""
+            required placeholder="your.name@email.com"/>
+        </fieldset>
+
+        <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+        </div>
+
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div class="thankyou_message" style="display:none;">
+        <h2><em>Thanks</em> for contacting us!
+            We will get back to you soon!</h2>
+        </div>
+
+    </form>
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- END -->
+
+    </body>
+</html>

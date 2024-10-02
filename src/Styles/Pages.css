@@ -1,0 +1,234 @@
+.page_front {
+    display:flex;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+}
+
+.competition{
+    /* display: flex; */
+    /* background-color:grey; */
+    width: 50%;
+    /* align-items: flex-start; */
+    padding: 80px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.card{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-image{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.card .card-title{
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+}
+.card .card-text{
+    /* font-family: Arial, sans-serif; */
+    color: hsl(0, 0%, 30%);
+    justify-content: flex-start;
+    text-align: left;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+.blue {
+    color: #0072ce;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color:black;
+}
+
+.silver {
+    color: #8c9091;
+}
+
+.gold {
+    color: #85754e;
+}
+
+p{
+    color: #8c9091;
+    /* font-family:'Source Sans Pro', sans-serif; */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between cards */
+}
+
+h1{
+    color: #0072ce;
+    /* font-family: 'Gotham Bold', sans-serif; */
+    font-size: 50px;
+}
+
+h2 {
+    color: #0072ce;
+}
+
+.box {
+    display: inline-flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    /* margin-bottom: 100px; */
+    /* width: 100%; */
+    justify-content: center;
+}
+.leftBox {
+    /* float:left; */
+    width: 50%;
+    align-content: flex-start;
+    justify-content: center;
+    padding-left:90px;
+    padding-right:30px;
+    text-align: left;
+}
+.rightBox {
+    /* float:right; */
+    width: 50%;
+    align-content: flex-start;
+    justify-content: center ;
+    padding-right:90px;
+    padding-left:30px;
+    text-align: left;
+}
+@media only screen and (max-width: 600px){
+    .box {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .leftBox {
+        /* float:left; */
+        /* width: 50%; */
+        width:100%;
+        align-content: center;
+        justify-content: center;
+        padding:50px;
+    }
+    .rightBox {
+        /* float:right; */
+        /* width: 50%; */
+        width:100%;
+        align-content: center;
+        justify-content: center;
+        padding:50px;
+    }
+    .competition{
+        /* display: flex; */
+        /* background-color:grey; */
+        width: 100%;
+        /* align-items: flex-start; */
+        padding: 80px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        /* align-content: center; */
+    }
+}
+
+.rbutton {
+    background-color: #0072ce; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
+button:hover {
+    background-color: #777;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.ctn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-left:90px;
+    padding-right:30px;
+    text-align: center;
+}
+
+
+
+  form {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+
+    input {
+      width: 50%;
+      height: 35px;
+      padding: 7px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid rgb(220, 220, 220);
+
+      &:focus {
+        border: 2px solid#0072ce;
+      }
+    }
+
+    textarea {
+  
+      width: 50%;
+      max-height: 100px;
+      min-height: 100px;
+      padding: 7px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #0072ce;
+
+      &:focus {
+        border: 2px solid #0072ce;
+      }
+    }
+
+    label {
+      margin-top: 1rem;
+    }
+
+    input[type="submit"] {
+      margin-top: 2rem;
+      cursor: pointer;
+      background: #0072ce;
+      color: white;
+      border: none;
+    }
+  }
